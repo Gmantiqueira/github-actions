@@ -27,6 +27,7 @@ jobs:
 
   publish:
     runs-on: ubuntu-latest
+    depends: [install-and-build]
     steps:
       - name: Publish package
         env:
