@@ -6,6 +6,6 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna build",
-    "publish": "lerna publish from-git minor --yes"
+    "publish": "lerna publish --dist-tag next --yes"
   }
 }
