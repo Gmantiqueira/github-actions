@@ -1,6 +1,6 @@
 {
   "name": "@gmantiqueira/monorepo1",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "> TODO: description",
   "main": "index.js",
   "author": "Gabriel Antiqueira <gabriel.antiqueira@vtex.com.br>",
@@ -20,5 +20,5 @@
   "publicConfig": {
     "access": "public"
   },
-  "gitHead": "16eb615f12f78b9f5927fceba336de24ed254336"
+  "gitHead": "7053aadf9bf847ef3f5c451a5945bbb719de1cbb"
 }
