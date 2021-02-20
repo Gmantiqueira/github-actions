@@ -23,8 +23,8 @@ jobs:
 
       - name: Lerna bootstrap
         run: |
-          lerna bootstrap
+          yarn run bootstrap
 
       - name: Build project
         run: |
-          lerna build
+          yarn run build
