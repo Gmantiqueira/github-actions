@@ -4,3 +4,27 @@ on:
   push:
     branches:
       - master
+
+jobs:
+  install-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup node
+        uses: actions/setup-node@2.1.4
+        with:
+          node-version: 14
+
+      - name: Install deps
+        run: |
+          yarn install
+
+      - name: Lerna bootstrap
+        run: |
+          lerna bootstrap
+
+      - name: Build project
+        run: |
+          lerna build
