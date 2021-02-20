@@ -6,6 +6,6 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna build",
-    "publish": "lerna publish --dist-tag next --yes"
+    "publish": "lerna publish --yes"
   }
 }
