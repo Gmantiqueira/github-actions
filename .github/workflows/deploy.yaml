@@ -1,0 +1,6 @@
+name: Lerna deployment test
+
+on:
+  push:
+    branches:
+      - master

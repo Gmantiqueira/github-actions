@@ -1,0 +1,19 @@
+{
+  "name": "monorepo1",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "main": "index.js",
+  "author": "Gabriel Antiqueira <gabriel.antiqueira@vtex.com.br>",
+  "homepage": "",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
