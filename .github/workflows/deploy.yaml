@@ -24,3 +24,17 @@ jobs:
       - name: Lerna bootstrap
         run: |
           yarn run bootstrap
+
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish package
+        uses: JS-DevTools/npm-publish@v1
+        id: package-publish
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+
+      - name: Print version
+        if: steps.package-publish.outputs.type != 'none'
+        run: |
+          echo "Version changed: ${{ steps.package-publish.outputs.old-version }} => ${{ steps.package-publish.outputs.version }}"
